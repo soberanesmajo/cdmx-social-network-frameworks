@@ -1,0 +1,24 @@
+.Login {
+  margin-top: 6%;
+  margin-left: 7%;
+  margin-right: 7%;
+  text-align: center;
+}
+
+.Login-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Login-title {
+  font-size: 1.5em;
+}
+
+.Login-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

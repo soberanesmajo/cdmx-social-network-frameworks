@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import firebase from 'firebase';
 import './Login.css';
-import { Row, Input } from 'react-materialize';
+import { Row, Input, Button } from 'react-materialize';
 
 class Login extends Component { // clase padre component
   constructor () {
@@ -52,7 +52,7 @@ class Login extends Component { // clase padre component
                 <Input type="password" label="password" s={12} />
             </Row>
             <Row className = "googleBtn">
-            <button onClick = {this.handleAuth}>Iniciar sesión con Google</button>
+            <Button onClick = {this.handleAuth} waves='light'>Iniciar sesión con Google</Button>
             </Row>
         </div>
       )
@@ -70,3 +70,5 @@ class Login extends Component { // clase padre component
 }
 
 export default Login;
+
+// <button onClick = {this.handleAuth}>Iniciar sesión con Google</button>

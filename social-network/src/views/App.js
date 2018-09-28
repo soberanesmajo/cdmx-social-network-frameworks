@@ -9,7 +9,8 @@ import Profile from '../components/profile/Profile';
 import Error from '../components/error/Error';
 
 const App = () =>
-      <Router>
+      // <Router path = {process.env.PUBLIC_URL}>
+      <Router path={process.env.PUBLIC_URL + '/'}>
         <div>
 
         <Switch>

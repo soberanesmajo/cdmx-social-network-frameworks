@@ -12,7 +12,7 @@ class Login extends Component { // clase padre component
     };
 
     this.handleAuth = this.handleAuth.bind(this);
-    this.handleLogout = this.handleLogout.bind(this);
+    // this.handleLogout = this.handleLogout.bind(this);
     this.redirectIfIsAuth = this.redirectIfIsAuth.bind(this);
   }
 
@@ -30,11 +30,11 @@ class Login extends Component { // clase padre component
     .catch(error => console.log(`Error ${error.code}: ${error.message}`));
   }
 
-  handleLogout () {
-    firebase.auth().signOut()
-    .then(result => console.log(`${result.user.email} ha cerrado sesión`))
-    .catch(error => console.log(`Error ${error.code}: ${error.message}`));
-  }
+  // handleLogout () {
+  //   firebase.auth().signOut()
+  //   .then(result => console.log(`${result.user.email} ha cerrado sesión`))
+  //   .catch(error => console.log(`Error ${error.code}: ${error.message}`));
+  // }
 
   redirectIfIsAuth () {
     if (this.state.user) {
@@ -70,5 +70,3 @@ class Login extends Component { // clase padre component
 }
 
 export default Login;
-
-// <button onClick = {this.handleAuth}>Iniciar sesión con Google</button>

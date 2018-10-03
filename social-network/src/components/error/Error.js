@@ -3,7 +3,7 @@ import React from 'react';
 const Error = () => {
   return (
     <div>
-      <h2>Error: Path does not exist!</h2>
+      <h2>Errors: Path does not exist!</h2>
     </div>
     )
 }

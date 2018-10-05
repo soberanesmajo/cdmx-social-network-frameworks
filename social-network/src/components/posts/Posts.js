@@ -20,16 +20,12 @@ class Posts extends Component {
 
   addPost = (e) => {
     e.preventDefault();
-    // const db = firebase.firestore();
-    // db.settings ({
-    //   timestampsInSnapshots : true
-    // });
-   const userRef = db.collection('posts').add ({
-     post : this.state.post
-   });
-    this.setState({
-      post: ''
-    });
+      const userRef = db.collection('posts').add ({
+        post : this.state.post
+      });
+        this.setState({
+          post: ''
+        });
   }
 
   render () {

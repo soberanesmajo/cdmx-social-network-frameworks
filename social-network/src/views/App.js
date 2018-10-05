@@ -7,8 +7,7 @@ import Home from '../components/home/Home';
 import Profile from '../components/profile/Profile';
 // import Error from '../components/error/Error';
 
-const App = () =>
-      <Router basename={process.env.PUBLIC_URL}>
+const App = (props) => (<Router basename={process.env.PUBLIC_URL}>
         <div>
 
         <Switch>
@@ -24,7 +23,7 @@ const App = () =>
 
           <Route
             path = '/home'
-            component = {Home}
+            component = {()=> <Home db={props.db}></Home>}
           />
 
           <Route
@@ -40,6 +39,6 @@ const App = () =>
         
         </Switch>        
         </div>
-      </Router>
+      </Router>);
 
 export default App;

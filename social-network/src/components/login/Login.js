@@ -39,15 +39,13 @@ class Login extends Component { // clase padre component
   redirectIfIsAuth () {
     if (this.state.user) {
     return (
-        <Redirect to = '/home'/>
+      <Redirect to = '/home' />
     )
     } else {
       return (
         <div className = "container">
           <h2>InsideOut</h2>
             <Row className ="login">  
-                <Input s={6} label="First Name" />
-                <Input s={6} label="Last Name" />
                 <Input type="email" label="Email" s={12} />
                 <Input type="password" label="password" s={12} />
             </Row>

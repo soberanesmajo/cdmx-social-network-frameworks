@@ -3,7 +3,6 @@ import { Navbar, NavItem} from 'react-materialize';
 import './navbar.css';
 import firebase from 'firebase';
 import { Redirect } from 'react-router-dom';
-import Login from '../login/Login';
 
 // class navbarComp extends Component {
 //   constructor () {
